@@ -1,0 +1,161 @@
+@font-face {
+  font-family: bodyFont;
+  src: url(analogue55regular.ttf);
+}
+@font-face {
+  font-family: logoFont;
+  src: url(/harabara\ mais\ demo.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: url(/Taieri.png) #010129 no-repeat;
+  background-size: cover;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  font-family: bodyFont;
+  color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+/* MAIN */
+
+main {
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+/* Header */
+header,
+footer {
+  justify-content: space-between;
+  margin: 1rem 1.8rem;
+  background-color: #010129;
+  width: 90%;
+  padding: auto 1rem;
+  padding-left: 1rem;
+  min-height: 5vh;
+  box-sizing: border-box;
+}
+header {
+  position: sticky;
+  top: 0;
+  margin-top: 0;
+  padding-top: 0;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+.logo {
+  font-family: logoFont;
+  font-size: 2rem;
+  background: linear-gradient(to right, #056cf2 40%, #c157f2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px purple;
+}
+.menu {
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 1.3rem;
+}
+
+.menu > * {
+  margin: auto 1rem;
+  color: #f2a663;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background: #d357f2;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px purple;
+}
+
+.fas {
+  margin-left: 0.3rem;
+}
+
+/* Jumbotron */
+.main-heading,
+.play-heading {
+  font-size: 3rem;
+  background: linear-gradient(to right, rgb(228, 76, 76), rgb(36, 36, 209));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px purple;
+}
+.jumbotron {
+  margin: 3rem auto;
+  padding: 0.5rem 1rem;
+}
+.jumbotext {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* PLAY */
+.buttons {
+  position: relative;
+}
+.btn {
+  display: block;
+  font-size: 1.4rem;
+  margin: 0.5rem;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  width: 6rem;
+}
+.workout {
+  top: 1rem;
+  left: 50%;
+  background: black;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.code {
+  top: 1rem;
+  right: 50%;
+  background: #010129;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.random {
+  top: 8rem;
+  left: 50%;
+  background: rgb(182, 25, 25);
+  border-radius: 0 0 0.3rem 0.3rem;
+}
+.sleep {
+  top: 8rem;
+  right: 50%;
+  background: rgb(32, 118, 168);
+  border-radius: 0 0 0.3rem 0.3rem;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  body {
+    height: 100vh;
+  }
+}
